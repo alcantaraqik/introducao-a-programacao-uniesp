@@ -23,8 +23,10 @@ from os import remove
 
 
 lista_de_cadastro = []
+
 opcao = 1
 print ('CONTROLE DE FUNCIONÁRIOS')
+
 while opcao !=0:
     print('''O que você deseja fazer?\n
     1 - Incluir funcionário
@@ -34,6 +36,7 @@ while opcao !=0:
     5 - Aumento de salário
     6 - Sair''')
     opcao = int(input("Escolha uma opção:"))
+   
     if opcao == 1:
         print('INCLUSÃO DE FUNCIONÁRIO:')
         pessoa = []
@@ -52,14 +55,13 @@ while opcao !=0:
         print('Funcionário Cadastrado')
 
     if opcao == 2:
+       
         print('ALTERAÇÃO DE FUNCIONÁRIO')
 
     if opcao == 3:
+        print('LISTAR FUNCIONNARIOS')
 
-
-
-
-     if opcao ==4:
+    if opcao ==4:
          print(' REMOVER FUNCIONARIO ')
          remove.pop(removerfunc)
          print('Funcionário removido')
